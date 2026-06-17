@@ -1,0 +1,25 @@
+/*
+Program name: style.css
+Author: Your Name
+Date created: 6/16/2026
+Date last edited:
+Version: 1.0
+Description: Styling for patient form.
+*/
+body {
+    background-color: #f0f8ff;
+    font-family: Arial;
+}
+
+h1 {
+    color: darkblue;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+.footer {
+    background-color: lightgray;
+    padding: 20px;
+}
