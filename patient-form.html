@@ -1,25 +1,26 @@
 <!--
 Program name: patient-form.html
-Author: Your Name
+Author: Hailey Haiducek
 Date created: 6/16/2026
-Date last edited:
+Date last edited: 6/17/2026
 Version: 1.0
 Description: Patient registration form.
 -->
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8">
-<title>JavaScript Form Validation using a sample registration form</title>
-<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
-<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
-<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
-<script src="sample-registration-form-validation.js"></script>
+<title>Patient Registration Form</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body onload="document.registration.userid.focus();">
 <h1>Registration Form</h1>
 Use tab keys to move from one input field to the next.
 <form name='registration' onSubmit="return formValidation();">
 <ul>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="John"><br>
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname" value="Doe">
 <li><label for="userid">User id:</label></li>
 <li><input type="text" name="userid" size="12" /></li>
 <li><label for="passid">Password:</label></li>
@@ -101,3 +102,6 @@ Use tab keys to move from one input field to the next.
 </form>
 </body>
 </html>
+<!--
+Need to include a comment at the end & throughout for clarity
+-->
