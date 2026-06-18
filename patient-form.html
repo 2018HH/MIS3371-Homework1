@@ -28,7 +28,9 @@ Description: Patient registration form.
                         >
                     </td>
                     <td valign="top">Hailey Medical Center</td>
-                    <td valign="bottom" align="right">Today's date: <span id="today"</span></td>
+                    <td valign="bottom" align="right">
+						Today's date: <span id="today"</span>
+					</td>
                 </tr>
             </table>
         </div>
@@ -64,6 +66,26 @@ Description: Patient registration form.
             >
         <id="name_text"><</td>
     </tr>
+	<tr class="form">
+		<td align="right">
+			<label for="dob" >Date of Birth</label>
+		</td>
+		<td>
+			<input type="date"
+					id="dob"
+					name="dob"
+		</td>
+	</tr>	
+	<tr class="form">
+		<td align="right">
+			<label for="ssn" >Social Security</label>
+		</td>
+		<td>
+			<input type="password"
+					id="ssn"
+					name="ssn"
+		</td>
+	</tr>
     <tr  class="form">
         <td align="right">
             <label for="addr1" >Address Line 1</label>
@@ -82,9 +104,8 @@ Description: Patient registration form.
         </td>
         <td>
             <input type="text" 
-                    maxlength="30" 
-                    id="addr1" 
-                    name="addr1" 
+                    id="addr2" 
+                    name="addr2" 
             >
             <id="addr2_text">
         </td>
@@ -96,7 +117,6 @@ Description: Patient registration form.
         </td>
         <td>
             <input type="text" 
-                    maxlength="25" 
                     id="city" 
                     name="city" 
             >
@@ -155,7 +175,6 @@ Description: Patient registration form.
                 <option value="WY">Wyoming</option>
             </select>
             <input type="text" 
-                    maxlength="5" 
                     id="zip" 
                     name="zip" 
             >
@@ -168,13 +187,45 @@ Description: Patient registration form.
         </td>
         <td>
             <input type="text" 
-                    maxlength="13" 
                     id="phone" 
                     name="phone" 
             >
             <id="phone_text">  
         </td>
-    </tr class="form">
+	</tr>
+   	<tr class="form">
+		<td align="right">
+			<label for="email" >Email</label>
+		</td>
+		<td>
+			<input type="email"
+					id="email"
+					name="email"
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right">
+			<label for="symptoms" >Please describe your current symptoms</label>
+		</td>
+		<td>
+			<textarea 
+				id="symptoms" 
+				name="symptoms" 
+				rows="3" 
+				cols="50">
+			</textarea>
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right">
+  			<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+			<label for="vehicle1"> I have a bike</label><br>
+			<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+			<label for="vehicle2"> I have a car</label><br>
+			<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+			<label for="vehicle3"> I have a boat</label>
+</form>
+	</tr class="form">
     <tr>        
         <td colspan="3">
             <center>
@@ -186,10 +237,10 @@ Description: Patient registration form.
     <tr>
     </tr>
 
-   </table
+			</table>
 </form> 
         </div>
-        <div id="footer"
+        <div id="footer">
 			<p>Hailey Medical Center</p>
 			<p>PO Box 911</p>
 			<p>Houston, TX 77027</p>
