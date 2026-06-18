@@ -1,25 +1,41 @@
-/*
-Program name: style.css
-Author: Your Name
-Date created: 6/16/2026
-Date last edited:
-Version: 1.0
-Description: Styling for patient form.
-*/
+   /* 
+ Name: Hailey Haiducek
+ File: homework1.css
+ Date Created: 6/17/2026
+ Date Updated: 6/17/2026
+ Purpose: Style sheet for patient registration form
+ */
 body {
-    background-color: #f0f8ff;
-    font-family: Arial;
+    background-color: lightblue;
+    font-family: "Source Sans Pro", sans-serif;
+}
+ h1 {
+    text-align: right;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    color: black;
 }
 
-h1 {
-    color: darkblue;
+#header {
+        background-color: darkblue;
+        text-align: center;
+}
+#footer {
+        background-color: darkblue;
+        text-align: center;
+}
+.form {
+        background-color: white;
+}
+#logo {
+    width: 100px;
 }
 
-table {
-    border-spacing: 10px;
+.textsize1 
+{
+    width:10px
 }
-
-.footer {
-    background-color: lightgray;
-    padding: 20px;
+.textsize5 
+{
+    width:40px
 }
