@@ -2,9 +2,9 @@
 Author: Hailey Haiducek
 File: patient-form.html
 Date created: 6/16/2026
-Date last edited: 6/17/2026
+Date last edited: 6/18/2026
 Version: 1.0
-Description: Patient registration form - Homework 1.
+Description: Homework 1 patient registration form
 -->
 <!DOCTYPE html>
 <html>
@@ -17,10 +17,12 @@ Description: Patient registration form - Homework 1.
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+		<!-- Header -->
         <div id="header"> 
             <table width="100%">
                 <tr>
                     <td>
+						<!-- Load external logo file -->
                         <img 
                             id="logo" 
                             src="logo.png" 
@@ -38,16 +40,19 @@ Description: Patient registration form - Homework 1.
         </div>
         <hr>
         <div id="body">
+<!-- Load external Thank You page file -->
 <form action="thankyou.html">
+	<!-- Beginning of form | form title -->
    <table class="form">
     <tr class="form">
         <th class="form" colspan="3">Register new patient</th>
     </tr>
+	<!-- First Name, Middle Initial, Last Name -->
     <tr class="form">
         <td align="right">
             <label for="firstname">First Name</label>
             <label for="middleinit">Middle Initial</label>
-            <label for="lastname">Last</label>
+            <label for="lastname">Last Name</label>
         </td>
         <td>
              <input type="text"
@@ -66,6 +71,7 @@ Description: Patient registration form - Homework 1.
                     id="lastname" 
                     name="lastname" 
     </tr>
+	<!-- DOB -->
 	<tr class="form">
 		<td align="right">
 			<label for="dob" >Date of Birth</label>
@@ -75,7 +81,8 @@ Description: Patient registration form - Homework 1.
 					id="dob"
 					name="dob"
 		</td>
-	</tr>	
+	</tr>
+	<!-- SSN, masked -->
 	<tr class="form">
 		<td align="right">
 			<label for="ssn" >Social Security</label>
@@ -86,6 +93,7 @@ Description: Patient registration form - Homework 1.
 					name="ssn"
 		</td>
 	</tr>
+	<!-- Address 1 -->
     <tr  class="form">
         <td align="right">
             <label for="addr1" >Address Line 1</label>
@@ -98,6 +106,7 @@ Description: Patient registration form - Homework 1.
             >
         <id="addr1_text"></td>
     </tr>
+	<!-- Address 2 -->
     <tr  class="form">
         <td align="right">
             <label for="addr2">Address Line 2</label>
@@ -109,6 +118,7 @@ Description: Patient registration form - Homework 1.
             >
             <id="addr2_text">
         </td>
+	<!-- City, ST, Zip -->
     <tr class="form">
         <td align="right">
             <label for="city">City,</label>
@@ -181,6 +191,7 @@ Description: Patient registration form - Homework 1.
             <id="City_text"><id="State_text"> 
         </td>
     </tr>
+	<!-- Phone Number -->
     <tr class="form">
         <td align="right">
             <label for="phone">Phone #</label>
@@ -193,6 +204,7 @@ Description: Patient registration form - Homework 1.
             <id="phone_text">  
         </td>
 	</tr>
+	<!-- Email -->
    	<tr class="form">
 		<td align="right">
 			<label for="email" >Email</label>
@@ -203,6 +215,7 @@ Description: Patient registration form - Homework 1.
 					name="email"
 		</td>
 	</tr>
+	<!-- Symptom textarea -->
 	<tr class="form">
 		<td align="right">
 			<label for="symptoms" >Please describe your current symptoms</label>
@@ -216,18 +229,20 @@ Description: Patient registration form - Homework 1.
 			</textarea>
 		</td>
 	</tr>
+	<!-- Communication Preferences, checkbox -->
 	<tr class="form">
 		<td align="right"> 
 			<label>Communication Preferences</label>
 		</td>
 		<td>
-  			<input type="checkbox"> Email<br>
-			<input type="checkbox"> SMS Message<br>
-			<input type="checkbox"> Phone Call<br>
-			<input type="checkbox"> Voice Mail<br>
-			<input type="checkbox"> Direct Contact - No Voicemail
+  			<input type="checkbox" id="email"> <label for="email"> Email </label><br>
+  			<input type="checkbox" id="smstext"> <label for="smstext"> SMS Text </label><br>
+  			<input type="checkbox" id="phonecall"> <label for="phonecall"> Phone Call </label><br>
+  			<input type="checkbox" id="voicemail"> <label for="voicemail"> Voicemail </label><br>
+  			<input type="checkbox" id="direct"> <label for="direct"> Direct Contact - No Voicemail </label><br>
 		</td>
 	</tr>
+	<!-- Gender, radio button -->
 	<tr class="form">
 		<td align="right">
 			<label>Gender</label>
@@ -238,6 +253,7 @@ Description: Patient registration form - Homework 1.
 			<input type="radio" name="gender"> Other/Prefer not to say
 		</td>
 	</tr>
+	<!-- Vaccination, radio button -->
 	<tr class="form">
 		<td align="right"> Are you vaccinated?
 		</td>
@@ -246,6 +262,7 @@ Description: Patient registration form - Homework 1.
 			<input type="radio" name="vaccinated"> No
 		</td>
 	</tr>
+	<!-- Insurance, radio button -->
 	<tr class="form">
 		<td align="right"> Do you have insurance?
 		</td>
@@ -254,6 +271,7 @@ Description: Patient registration form - Homework 1.
 			<input type="radio" name="insurance"> No
 		</td>
 	</tr>
+	<!-- Health rating, sliding scale -->
 	<tr class="form">
 		<td align="right"> What would you rate your health (scale 1-10), with 1 being the worst and 10 being the best?
 		</td>
@@ -267,6 +285,7 @@ Description: Patient registration form - Homework 1.
 			10
 		</td>
 	</tr>
+	<!-- User ID -->
 	<tr class="form">
 		<td align="right"> User ID
 		</td>
@@ -276,6 +295,7 @@ Description: Patient registration form - Homework 1.
 					name="userid">
 		</td>
 	</tr>
+	<!-- Password, masked -->
 	<tr class="form">
 		<td align="right"> Password
 		</td>
@@ -285,6 +305,7 @@ Description: Patient registration form - Homework 1.
 					name="password">
 		</td>
 	</tr>
+	<!-- Confirm password, masked -->
 	<tr class="form">
 		<td align="right"> Re-enter Password
 		</td>
@@ -294,6 +315,7 @@ Description: Patient registration form - Homework 1.
 					name="confirmpassword">
 		</td>
 	</tr>
+<!-- Submit, Clear & Start Over buttons -->
 </form>
 	</tr class="form">
     <tr>        
@@ -308,6 +330,7 @@ Description: Patient registration form - Homework 1.
     </tr>
 
 			</table>
+<!-- Footer -->
 </form> 
         </div>
         <div id="footer">
@@ -325,7 +348,8 @@ Description: Patient registration form - Homework 1.
 				href="https://instagram.com" target="_blank"> Instagram
 			</a>
 			
-        </div>  
+        </div>
+<!-- JS Local Date -->
  <script>
     document.getElementById("today").innerHTML = new Date().toLocaleDateString();
 </script>
