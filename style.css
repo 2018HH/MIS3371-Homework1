@@ -35,7 +35,7 @@ th.form {
   margin-right: auto;
 }
 
-td: first-child {
+td:first-child {
    text-align: right;
    padding-right: 15px;
    width: 300px;
@@ -56,8 +56,8 @@ td: first-child {
         background-color: white;
 }
 #logo {
-    width: 120px;
-    height:L auto;
+    width: 250px;
+    height:auto;
 }
 
 .textsize1 
