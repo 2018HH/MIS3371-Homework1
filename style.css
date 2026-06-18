@@ -41,7 +41,7 @@ td: first-child {
    width: 300px;
 }
 #header {
-        background-color: lightblue;
+        background-color: Aliceblue;
         color: white;
         text-align: center;
         padding: 15px;
@@ -56,7 +56,8 @@ td: first-child {
         background-color: white;
 }
 #logo {
-    width: 100px;
+    width: 120px;
+    height:L auto;
 }
 
 .textsize1 
