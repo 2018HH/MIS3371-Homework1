@@ -217,13 +217,75 @@ Description: Patient registration form.
 		</td>
 	</tr>
 	<tr class="form">
-		<td align="right">
-  			<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-			<label for="vehicle1"> I have a bike</label><br>
-			<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-			<label for="vehicle2"> I have a car</label><br>
-			<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-			<label for="vehicle3"> I have a boat</label>
+		<td align="right"> Communication Preferences
+  			<input type="checkbox"> Email<br>
+			<input type="checkbox"> SMS Message<br>
+			<input type="checkbox"> Phone Call<br>
+			<input type="checkbox"> Voice Mail<br>
+			<input type="checkbox"> Direct Contact - No Voicemail
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right"> Gender
+		</td>
+		<td>
+		  	<input type="radio" name="gender"> Male
+			<input type="radio" name="gender"> Female
+			<input type="radio" name="gender"> Other/Prefer not to say
+		</td>
+	</tr>
+		<tr class="form">
+		<td align="right"> Are you vaccinated?
+		</td>
+		<td>
+		  	<input type="radio" name="vaccinated"> Yes
+			<input type="radio" name="vaccinated"> No
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right"> Do you have insurance?
+		</td>
+		<td>
+		  	<input type="radio" name="insurance"> Yes
+			<input type="radio" name="insurance"> No
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right"> What would you rate your health (scale 1-10), with 1 being the worst and 10 being the best?
+		</td>
+		<td>
+		  	<input type="range"
+					min="1"
+					max="10">
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right"> User ID
+		</td>
+		<td>
+		  	<input type="text"
+					id="userid"
+					name="userid">
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right"> Password
+		</td>
+		<td>
+		  	<input type="password"
+					id="password"
+					name="password">
+		</td>
+	</tr>
+	<tr class="form">
+		<td align="right"> Re-enter Password
+		</td>
+		<td>
+		  	<input type="password"
+					id="confirmpassword"
+					name="confirmpassword">
+		</td>
+	</tr>
 </form>
 	</tr class="form">
     <tr>        
