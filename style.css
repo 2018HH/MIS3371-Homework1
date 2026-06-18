@@ -41,13 +41,13 @@ td: first-child {
    width: 300px;
 }
 #header {
-        background-color: #6495ED;
+        background-color: AliceBlue;
         color: white;
         text-align: center;
         padding: 15px;
 }
 #footer {
-        background-color: #6495ED;
+        background-color: AliceBlue;
         color: white;
         text-align: center;
         padding: 20px;
