@@ -11,7 +11,7 @@ body {
 }
  h1 {
     text-align: center;
-    color: white;
+    color: midnightblue;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 32px;
     margin: 0;
@@ -42,13 +42,13 @@ td: first-child {
 }
 #header {
         background-color: Aliceblue;
-        color: white;
+        color: midnightblue;
         text-align: center;
         padding: 15px;
 }
 #footer {
         background-color: AliceBlue;
-        color: white;
+        color: midnightblue;
         text-align: center;
         padding: 20px;
 }
