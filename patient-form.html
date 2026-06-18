@@ -47,31 +47,20 @@ Description: Patient registration form.
         </td>
         <td>
              <input type="text"
-                    size="25"
                     maxlength="30" 
                     id="firstname" 
                     name="firsttname" 
-                    required
-                    oninput="this.setCustomValidity('')"
-                    placeholder="(req'd)"
             >
             
             <input type="text" 
-                    size="1"
                     maxlength="1" 
                     id="middleinit" 
                     name="middleinit" 
-                    placeholder="Q"
             >
             <input type="text"
-                    size="20"
                     maxlength="30" 
                     id="lastname" 
                     name="lastname" 
-                    required
-                    oninvalid="this.setCustomValidity('Last Name is Required')"
-                    oninput="this.setCustomValidity('')"
-                    placeholder="Public (req'd)"
             >
         <span id="name_text"><</td>
     </tr>
@@ -81,15 +70,9 @@ Description: Patient registration form.
         </td>
         <td>
             <input type="text" 
-                    size="20" 
-                    minlength="4"
                     maxlength="30" 
                     id="addr1" 
                     name="addr1" 
-                    required
-                    oninvalid="this.setCustomValidity('At least 1 address line Required')"
-                    oninput="this.setCustomValidity('')"
-                    placeholder="1234 Main St (req'd)"
             >
         <span id="addr1_text"></td>
     </tr>
@@ -99,11 +82,9 @@ Description: Patient registration form.
         </td>
         <td>
             <input type="text" 
-                    size="20" 
                     maxlength="30" 
                     id="addr1" 
                     name="addr1" 
-                    placeholder="Apt #, etc..."
             >
             <span id="addr2_text">
         </td>
@@ -115,16 +96,11 @@ Description: Patient registration form.
         </td>
         <td>
             <input type="text" 
-                    size="10" 
                     maxlength="25" 
                     id="city" 
                     name="city" 
-                    required
-                    oninvalid="this.setCustomValidity('You forgot City')"
-                    oninput="this.setCustomValidity('')"
-                    placeholder="Anytown (req'd)"
             >
-            <select required>
+            <select>
                 <option value=""></option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -179,15 +155,9 @@ Description: Patient registration form.
                 <option value="WY">Wyoming</option>
             </select>
             <input type="text" 
-                    pattern="[0-9]{5}"
-                    size="5"
                     maxlength="5" 
                     id="zip" 
                     name="zip" 
-                    required
-                    oninvalid="this.setCustomValidity('5 Digit Zip/Postal Code required')"
-                    oninput="this.setCustomValidity('')"
-                    placeholder="00000"
             >
             <span id="City_text"><span id="State_text"> 
         </td>
@@ -198,21 +168,13 @@ Description: Patient registration form.
         </td>
         <td>
             <input type="text" 
-                    size="13" 
                     maxlength="13" 
                     id="phone" 
                     name="phone" 
-                    placeholder="(713)555-1212"
             >
             <span id="phone_text">  
         </td>
     </tr class="form">
-
-
-
-
-
-
     <tr>        
         <td colspan="3">
             <center>
@@ -228,14 +190,11 @@ Description: Patient registration form.
 </form> 
         </div>
         <div id="footer"
-			<p>Healthy Life Medical</p>
-			<p>PO Box 18881</p>
-			<p>Sugar Land, TX 77496</p>
+			<p>Hailey Medical Center</p>
+			<p>PO Box 911</p>
+			<p>Houston, TX 77027</p>
 			<button>Contact Us</button>
-        </div>
-        <!-- Load external JavaScript -->
-        <script src="homework1.js"></script>
-        
+        </div>  
  <script>
     document.getElementById("today").innerHTML = new Date().toLocaleDateString();
 </script>
