@@ -1,28 +1,56 @@
-   /* 
+/* 
  Name: Hailey Haiducek
  File: homework1.css
  Date Created: 6/17/2026
  Date Updated: 6/17/2026
- Purpose: Style sheet for patient registration form
- */
+ Purpose: Style sheet for patient registration form - Homework 1
+*/
 body {
-    background-color: lightblue;
+    background-color: #f0f8ff;
     font-family: "Source Sans Pro", sans-serif;
 }
  h1 {
-    text-align: right;
+    text-align: center;
+    color: white;
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
-    color: black;
+    font-size: 32px;
+    margin: 0;
 }
 
+table.form {
+  width: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding: 20px;
+  border-spacing: 00px;
+  color:rgb(222, 243, 245);
+}
+th.form {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+  padding: 20px;
+  border-spacing: 20px;
+  color:rgb(222, 243, 245);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td: first-child {
+   text-align: right;
+   padding-right: 15px;
+   width: 300px;
+}
 #header {
-        background-color: darkblue;
+        background-color: #6495ED;
+        color: white;
         text-align: center;
+        padding: 15px;
 }
 #footer {
-        background-color: darkblue;
+        background-color: #6495ED;
+        color: white;
         text-align: center;
+        padding: 20px;
 }
 .form {
         background-color: white;
