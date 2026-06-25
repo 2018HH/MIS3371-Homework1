@@ -59,18 +59,25 @@ Description: Homework 1 patient registration form
              <input type="text"
                     maxlength="30" 
                     id="firstname" 
-                    name="firsttname" 
+                    name="firsttname"
+				 	title="Enter your first name - Letters only"
+				 	required
             >
             
             <input type="text" 
                     maxlength="1" 
                     id="middleinit" 
-                    name="middleinit" 
+                    name="middleinit"
+					title="Enter only your middle initial"
+					required
             >
             <input type="text"
                     maxlength="30" 
                     id="lastname" 
-                    name="lastname" 
+                    name="lastname"
+					title="Enter your first name - Letters only"
+				 	required
+			>
     </tr>
 	<!-- DOB -->
 	<tr class="form">
@@ -81,6 +88,9 @@ Description: Homework 1 patient registration form
 			<input type="date"
 					id="dob"
 					name="dob"
+					title="Enter in 00/00/0000 format"
+				 	required
+			>				
 		</td>
 	</tr>
 	<!-- SSN, masked -->
@@ -92,6 +102,9 @@ Description: Homework 1 patient registration form
 			<input type="password"
 					id="ssn"
 					name="ssn"
+					title="Enter numbers only - no dashes"
+				 	required
+			>				
 		</td>
 	</tr>
 	<!-- Address 1 -->
@@ -103,7 +116,9 @@ Description: Homework 1 patient registration form
             <input type="text" 
                     maxlength="30" 
                     id="addr1" 
-                    name="addr1" 
+                    name="addr1"
+					title="Only enter street address"
+				 	required		
             >
         <id="addr1_text"></td>
     </tr>
@@ -115,7 +130,8 @@ Description: Homework 1 patient registration form
         <td>
             <input type="text" 
                     id="addr2" 
-                    name="addr2" 
+                    name="addr2"
+					title="Only enter if you have a secondary address"
             >
             <id="addr2_text">
         </td>
@@ -363,6 +379,7 @@ Description: Homework 1 patient registration form
  <script>
     document.getElementById("today").innerHTML = new Date().toLocaleDateString();
 </script>
+<script src="patient-form.js"></script>
 </body>
 <!-- End of file: homework1.html -->
 </html>
